@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -90,14 +92,14 @@ class MyApp extends StatelessWidget {
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text("Nama "), Text("Luthfwi")],
+                    children: [Text("Nama "), Text("Dhiyaa Luthfwiedy Pratama")],
                   ),
                   SizedBox(
                     height: 15,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [Text("Kelas "), Text("SIIF09-TI2")],
+                    children: [Text("Kelas "), Text("S1IF09-TI2")],
                   ),
                   SizedBox(
                     height: 15,
@@ -156,7 +158,7 @@ class MyApp extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       const Text("Laporkan Masalah"),
-                      Image.asset("assets/gambar2.png")
+                      Image(image: ResizeImage(AssetImage("assets/gambar2.png"), width: 10, height: 10)),
                     ],
                   ),
                 ],
